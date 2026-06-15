@@ -1,0 +1,61 @@
+/* ============================================================
+   ALMANSOUR — Base / reset / brand primitives
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--fs-md);
+  line-height: var(--lh-normal);
+  color: var(--text-primary);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Arabic / RTL contexts */
+[dir="rtl"], .ar { font-family: var(--font-ar); }
+[dir="rtl"] { text-align: right; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: var(--fw-semibold); line-height: var(--lh-tight); }
+p { margin: 0; }
+a { color: var(--brand-accent); text-decoration: none; }
+img { max-width: 100%; display: block; }
+button { font: inherit; }
+
+::selection { background: color-mix(in srgb, var(--teal-500) 30%, transparent); }
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* ---- Brand display helpers ---- */
+.display {           /* Latin Roman caps, e.g. ALMANSOUR */
+  font-family: var(--font-display);
+  letter-spacing: var(--ls-display);
+  text-transform: uppercase;
+}
+.ar-display {        /* Arabic headline */
+  font-family: var(--font-ar-display);
+  line-height: var(--lh-snug);
+}
+.eyebrow {           /* small caps overline */
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-caps);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  color: var(--brand-accent);
+}
+
+/* Hairline rule used in the logo lockup ( ـــ tagline divider ) */
+.rule {
+  height: 1px;
+  background: var(--border-strong);
+  border: 0;
+}

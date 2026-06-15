@@ -1,0 +1,13 @@
+/* ============================================================
+   بُنّ المنصور · ALMANSOUR — Design System
+   "قهوة على أصولها" — coffee, by its roots.
+
+   Global entry point. Consumers link THIS file only.
+   Import order matters: fonts → tokens → base.
+   ============================================================ */
+
+@import url('tokens/fonts.css');
+@import url('tokens/colors.css');
+@import url('tokens/typography.css');
+@import url('tokens/spacing.css');
+@import url('tokens/base.css');

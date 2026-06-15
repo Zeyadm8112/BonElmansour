@@ -1,0 +1,92 @@
+/* ============================================================
+   ALMANSOUR · بُنّ المنصور — Color tokens
+   Core palette sourced from the brand presentation (page 16):
+     Almond Cream   #EDE0D4
+     Coffee Bean    #7F5539
+     Dark Slate Grey#283D3B
+     Stormy Teal    #197278
+   Camel #97653F sampled from the logo field (signature brown).
+   ============================================================ */
+
+:root {
+  /* ---- Base palette: SAND (warm neutral / paper) ---- */
+  --sand-50:  #FAF6F0;
+  --sand-100: #F4EBE0;
+  --sand-200: #EDE0D4;   /* Almond Cream — core */
+  --sand-300: #DECBB6;
+  --sand-400: #CBB096;
+  --sand-500: #B59474;
+
+  /* ---- Base palette: COFFEE (brand brown) ---- */
+  --coffee-300: #B0855C;
+  --coffee-400: #97653F;  /* Camel — logo field, core */
+  --coffee-500: #7F5539;  /* Coffee Bean — core, primary */
+  --coffee-600: #6B4730;
+  --coffee-700: #543726;
+  --coffee-800: #3E281B;
+
+  /* ---- Base palette: INK (dark slate, near-black) ---- */
+  --ink-600: #34504D;
+  --ink-700: #2F4543;
+  --ink-800: #283D3B;     /* Dark Slate Grey — core */
+  --ink-900: #1A2625;
+
+  /* ---- Base palette: TEAL (accent) ---- */
+  --teal-300: #4F9DA1;
+  --teal-400: #2C868B;
+  --teal-500: #197278;    /* Stormy Teal — core */
+  --teal-600: #135B60;
+
+  /* ---- Support ---- */
+  --gold-400: #C79A5B;    /* warm metallic, sparingly */
+  --white: #FFFFFF;
+  --black: #14100D;
+
+  /* ============================================================
+     SEMANTIC ALIASES
+     ============================================================ */
+
+  /* Surfaces — light (default, "paper") */
+  --bg-page:        var(--sand-100);
+  --surface:        var(--sand-50);
+  --surface-raised: var(--white);
+  --surface-sunken: var(--sand-200);
+
+  /* Surfaces — brand / dark */
+  --surface-coffee: var(--coffee-500);
+  --surface-camel:  var(--coffee-400);
+  --surface-ink:    var(--ink-800);
+  --surface-teal:   var(--teal-500);
+
+  /* Text — on light */
+  --text-primary:   var(--coffee-800);
+  --text-secondary: var(--coffee-600);
+  --text-muted:     var(--sand-500);
+  --text-on-light:  var(--ink-800);
+
+  /* Text — on dark / brand fields */
+  --text-on-coffee: var(--sand-200);
+  --text-on-ink:    var(--sand-200);
+  --text-inverse:   var(--sand-50);
+
+  /* Brand roles */
+  --brand-primary:   var(--coffee-500);
+  --brand-primary-hover: var(--coffee-600);
+  --brand-secondary: var(--ink-800);
+  --brand-accent:    var(--teal-500);
+  --brand-accent-hover: var(--teal-600);
+
+  /* Lines & borders */
+  --border-soft:   color-mix(in srgb, var(--coffee-500) 18%, transparent);
+  --border-strong: color-mix(in srgb, var(--coffee-500) 40%, transparent);
+  --border-on-dark: color-mix(in srgb, var(--sand-200) 26%, transparent);
+  --divider:       color-mix(in srgb, var(--coffee-800) 14%, transparent);
+
+  /* Status (kept within the warm/teal world) */
+  --success: var(--teal-500);
+  --warning: var(--gold-400);
+  --danger:  #A4452F;
+
+  /* Focus */
+  --focus-ring: color-mix(in srgb, var(--teal-500) 55%, transparent);
+}

@@ -1,0 +1,15 @@
+/* ============================================================
+   ALMANSOUR — Fonts
+   The original logo uses bespoke lettering (Arabic display +
+   Latin Roman caps). The vector source files (logo1.ai, MENU.ai)
+   were NOT delivered to the project, so the following Google Font
+   stand-ins are chosen to match the logo's character:
+     · Cinzel        → Latin display "ALMANSOUR" (inscriptional Roman caps)
+     · El Messiri    → Arabic display headlines (modern, elegant)
+     · Tajawal       → Arabic body / UI (clean, legible)
+     · Mulish        → Latin body / UI (warm humanist sans)
+   >>> Substitution flagged to the client — supply the real
+       brand fonts to replace these. <<<
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=El+Messiri:wght@400;500;600;700&family=Tajawal:wght@300;400;500;700&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');

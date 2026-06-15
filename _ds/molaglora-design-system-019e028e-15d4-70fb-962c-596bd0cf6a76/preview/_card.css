@@ -1,0 +1,34 @@
+/* Preview card base — used by every preview/*.html */
+@import url('../colors_and_type.css');
+
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{background:var(--n1);color:var(--fg2);font-family:var(--font-sans);}
+body{padding:20px;}
+
+.card{
+  background:var(--n0);
+  border-radius:var(--r-lg);
+  padding:24px;
+  box-shadow:var(--sh-2);
+}
+
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;}
+.col{display:flex;flex-direction:column;gap:12px;}
+.muted{color:var(--fg3);font-size:var(--t-caption);}
+.eyebrow{
+  font-size:9px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--brand-accent-strong);
+}
+.mono{font-family:var(--font-mono);font-size:11px;color:var(--fg3);}
+
+/* Swatch */
+.sw{
+  border-radius:14px; overflow:hidden; position:relative;
+  display:flex; flex-direction:column; justify-content:flex-end;
+  padding:14px; min-height:96px;
+}
+.sw .nm{font-size:12px;font-weight:500;line-height:1.2;}
+.sw .hx{font-family:var(--font-mono);font-size:10px;opacity:.65;margin-top:3px;}
+.sw .tk{position:absolute;top:10px;left:10px;font-family:var(--font-mono);font-size:10px;opacity:.55;}
+
+[dir="rtl"] .sw .tk{left:auto;right:10px;}

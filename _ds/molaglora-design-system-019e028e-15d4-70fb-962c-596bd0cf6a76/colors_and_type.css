@@ -1,0 +1,243 @@
+/* ============================================================
+   MOLAGLORA — DESIGN TOKENS
+   Inside out confidence & wellness
+   Premium luxury beauty clinic — Arabic-first RTL
+   ============================================================ */
+
+/* ── FONTS ──────────────────────────────────────────────────── */
+/* Brand-supplied font files (variable). Cairo retained from Google Fonts
+   as the Arabic display companion until a foundry file is supplied. */
+@font-face{
+  font-family:'Cormorant';
+  src:url('fonts/Cormorant-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight:300 700;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:'DM Sans';
+  src:url('fonts/DMSans-VariableFont_opsz_wght.ttf') format('truetype-variations');
+  font-weight:100 1000;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:'Noto Kufi Arabic';
+  src:url('fonts/NotoKufiArabic-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight:100 900;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:'Tajawal';
+  src:url('fonts/Tajawal-Regular.ttf') format('truetype');
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap');
+
+:root{
+
+  /* ── COLOR · GREEN (Primary) ──────────────────────────────── */
+  --g1:#1a3328;  /* Dark Green — text/headers */
+  --g2:#2d5a44;  /* Deep Green — primary brand */
+  --g3:#4a7c63;  /* Mid Green */
+  --g4:#8ab5a0;  /* Soft Green */
+  --g5:#e8f2ed;  /* Light Green BG */
+
+  /* ── COLOR · GOLD (Accent) ────────────────────────────────── */
+  --au1:#8b6914; /* Dark Gold */
+  --au2:#b8922a; /* Gold Primary */
+  --au3:#d4aa4e; /* Champagne Gold */
+  --au4:#f0d98c; /* Light Gold */
+  --au5:#faf4e1; /* Cream / Beige */
+
+  /* ── COLOR · NEUTRALS ─────────────────────────────────────── */
+  --n0:#ffffff;
+  --n1:#faf9f7; /* Base BG — warm white */
+  --n2:#f3f0eb; /* Light beige */
+  --n3:#e4ddd4; /* Mid beige border */
+  --n4:#9e9890; /* Muted text */
+  --n5:#4a4540; /* Body text */
+  --n6:#1e1c1a; /* Near black */
+
+  /* ── SEMANTIC · COLOR ─────────────────────────────────────── */
+  --bg-app:        var(--n1);
+  --bg-surface:    var(--n0);
+  --bg-elevated:   var(--n0);
+  --bg-tint-green: var(--g5);
+  --bg-tint-gold:  var(--au5);
+
+  --fg1: var(--g1);  /* primary heading */
+  --fg2: var(--n5);  /* body */
+  --fg3: var(--n4);  /* muted */
+  --fg-on-dark: rgba(255,255,255,.86);
+
+  --brand-primary:  var(--g2);
+  --brand-primary-strong: var(--g1);
+  --brand-accent:   var(--au3);
+  --brand-accent-strong: var(--au2);
+
+  --border-soft:    var(--n3);
+  --border-strong:  rgba(74,69,64,.18);
+  --divider:        rgba(74,69,64,.08);
+
+  --success: var(--g3);
+  --warning: var(--au2);
+  --error:   #b14848;
+
+  /* ── TYPOGRAPHY · FAMILIES ────────────────────────────────── */
+  --font-serif:        'Cormorant','Cormorant Garamond',Georgia,serif;
+  --font-sans:         'DM Sans',system-ui,-apple-system,'SF Pro Text',sans-serif;
+  --font-arabic-display:'Tajawal','Cairo','Noto Kufi Arabic',system-ui,sans-serif;
+  --font-arabic-body:  'Tajawal','Noto Kufi Arabic','Cairo',system-ui,sans-serif;
+  --font-mono:         ui-monospace,SFMono-Regular,Menlo,monospace;
+
+  /* ── TYPOGRAPHY · SCALE (mobile-first) ────────────────────── */
+  --t-display:   48px;   --t-display-lh: 1.05;
+  --t-h1:        32px;   --t-h1-lh: 1.15;
+  --t-h2:        24px;   --t-h2-lh: 1.2;
+  --t-h3:        20px;   --t-h3-lh: 1.3;
+  --t-body-lg:   17px;   --t-body-lg-lh: 1.5;
+  --t-body:      15px;   --t-body-lh: 1.55;
+  --t-small:     13px;   --t-small-lh: 1.5;
+  --t-caption:   11px;   --t-caption-lh: 1.4;
+  --t-label:     10px;   --t-label-lh: 1.4;
+
+  /* ── TYPOGRAPHY · WEIGHT ──────────────────────────────────── */
+  --w-light:   300;
+  --w-regular: 400;
+  --w-medium:  500;
+  --w-semi:    600;
+  --w-bold:    700;
+
+  /* ── TYPOGRAPHY · TRACKING ────────────────────────────────── */
+  --tracking-eyebrow: .18em;
+  --tracking-button:  .07em;
+  --tracking-display: .005em;
+  --tracking-tight:  -.01em;
+
+  /* ── SPACING (4-pt) ───────────────────────────────────────── */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  20px;
+  --s-6:  24px;
+  --s-7:  32px;
+  --s-8:  40px;
+  --s-9:  56px;
+  --s-10: 72px;
+
+  /* ── RADII ────────────────────────────────────────────────── */
+  --r-xs: 6px;
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-xl: 20px;
+  --r-2xl: 24px;
+  --r-pill: 999px;
+
+  /* ── SHADOWS (soft, premium) ──────────────────────────────── */
+  --sh-1: 0 1px 2px rgba(26,51,40,.04), 0 1px 1px rgba(26,51,40,.03);
+  --sh-2: 0 4px 14px rgba(26,51,40,.06), 0 1px 2px rgba(26,51,40,.04);
+  --sh-3: 0 8px 32px rgba(26,51,40,.08), 0 2px 6px rgba(26,51,40,.04);
+  --sh-4: 0 18px 48px rgba(26,51,40,.12), 0 4px 12px rgba(26,51,40,.06);
+  --sh-gold: 0 6px 22px rgba(184,146,42,.28);
+  --sh-inset: inset 0 1px 2px rgba(26,51,40,.06);
+
+  /* ── MOTION ───────────────────────────────────────────────── */
+  --ease-out: cubic-bezier(.2,.8,.2,1);
+  --ease-in-out: cubic-bezier(.6,.04,.4,1);
+  --dur-1: 120ms;
+  --dur-2: 200ms;
+  --dur-3: 320ms;
+  --dur-4: 520ms;
+
+  /* ── LAYER ────────────────────────────────────────────────── */
+  --z-nav: 40;
+  --z-sheet: 60;
+  --z-modal: 80;
+  --z-toast: 90;
+}
+
+/* ── SEMANTIC TYPE ROLES ────────────────────────────────────── */
+.t-display, h1.t-display{
+  font-family:var(--font-serif);
+  font-size:var(--t-display);
+  line-height:var(--t-display-lh);
+  font-weight:var(--w-regular);
+  color:var(--fg1);
+  font-style:italic;
+  letter-spacing:var(--tracking-display);
+}
+.t-display strong{font-style:normal;font-weight:var(--w-semi);}
+
+h1, .t-h1{
+  font-family:var(--font-serif);
+  font-size:var(--t-h1);
+  line-height:var(--t-h1-lh);
+  font-weight:var(--w-medium);
+  color:var(--fg1);
+}
+h2, .t-h2{
+  font-family:var(--font-serif);
+  font-size:var(--t-h2);
+  line-height:var(--t-h2-lh);
+  font-weight:var(--w-medium);
+  color:var(--fg1);
+}
+h3, .t-h3{
+  font-family:var(--font-serif);
+  font-size:var(--t-h3);
+  line-height:var(--t-h3-lh);
+  font-weight:var(--w-medium);
+  color:var(--fg1);
+}
+
+p, .t-body{
+  font-family:var(--font-sans);
+  font-size:var(--t-body);
+  line-height:var(--t-body-lh);
+  color:var(--fg2);
+}
+.t-body-lg{
+  font-size:var(--t-body-lg);
+  line-height:var(--t-body-lg-lh);
+}
+.t-small{font-size:var(--t-small);line-height:var(--t-small-lh);color:var(--fg3);}
+
+.t-eyebrow{
+  font-family:var(--font-sans);
+  font-size:var(--t-label);
+  font-weight:var(--w-medium);
+  letter-spacing:var(--tracking-eyebrow);
+  text-transform:uppercase;
+  color:var(--brand-accent-strong);
+}
+
+.t-button{
+  font-family:var(--font-sans);
+  font-size:12px;
+  font-weight:var(--w-medium);
+  letter-spacing:var(--tracking-button);
+  text-transform:uppercase;
+}
+
+/* ── ARABIC OVERRIDES ───────────────────────────────────────── */
+:root[dir="rtl"], [dir="rtl"]{
+  --font-serif: var(--font-arabic-display);
+  --font-sans:  var(--font-arabic-body);
+}
+[dir="rtl"] .t-display,
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3{
+  font-family:var(--font-arabic-display);
+  font-style:normal;
+  letter-spacing:0;
+  font-weight:var(--w-semi);
+}
+[dir="rtl"] body, [dir="rtl"] p, [dir="rtl"] .t-body, [dir="rtl"] .t-small{
+  font-family:var(--font-arabic-body);
+}
+[dir="rtl"] .t-eyebrow{letter-spacing:.08em;}
